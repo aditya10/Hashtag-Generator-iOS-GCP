@@ -1,5 +1,5 @@
-language: objective-c
+anguage: objective-c
 osx_image: xcode10
-xcode_workspace: Hashtagger.xcworkspace
+xcode_workspace: Hashtagger/Hashtagger.xcworkspace
 xcode_scheme: Hashtagger
 xcode_sdk: iphonesimulator12.0
