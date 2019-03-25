@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hashtagger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-VA-1J2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="635"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#ashtagger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZ8-uM-fUr">
+                                <rect key="frame" x="121" y="44" width="171" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MAL-SM-Jfp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGc-W2-JR6">
+                                <rect key="frame" x="20" y="558" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.50588235294117645" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PSM-wk-ZY2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <color key="tintColor" red="0.68337740059999996" green="0.033204803720000002" blue="0.090067024290000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Choose Image to Generate Hashtags">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqt-Eq-yed"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Your hashtags will appear here. Start by uploading an image above!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="joq-0c-eIh">
+                                <rect key="frame" x="20" y="662" width="374" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="dmN-lY-cR8"/>
+                                </constraints>
+                                <color key="textColor" red="0.078431372550000003" green="0.23529411759999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtS-SI-aqR">
+                                <rect key="frame" x="326" y="834" width="68" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="Fc7-7j-jWZ"/>
+                                    <constraint firstAttribute="height" constant="28" id="YWx-GE-Ugz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Copy">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.44705882349999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="copyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZI-mn-tNz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QGc-W2-JR6" secondAttribute="trailing" constant="20" id="2zX-p2-cJY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dZ8-uM-fUr" secondAttribute="trailing" constant="122" id="9QA-Xu-Ck4"/>
+                            <constraint firstItem="joq-0c-eIh" firstAttribute="top" secondItem="oM5-VA-1J2" secondAttribute="bottom" constant="27" id="GdB-x0-0h3"/>
+                            <constraint firstItem="oM5-VA-1J2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Oef-bS-jT0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QtS-SI-aqR" secondAttribute="trailing" constant="20" id="POz-H0-Nte"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="joq-0c-eIh" secondAttribute="trailing" constant="20" id="Rca-nW-HRh"/>
+                            <constraint firstItem="QtS-SI-aqR" firstAttribute="top" secondItem="joq-0c-eIh" secondAttribute="bottom" constant="8" id="TC0-Lv-7Be"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oM5-VA-1J2" secondAttribute="trailing" id="Uht-ZE-nR4"/>
+                            <constraint firstItem="QGc-W2-JR6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZNW-QF-NKW"/>
+                            <constraint firstItem="joq-0c-eIh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gBf-ah-rsT"/>
+                            <constraint firstItem="joq-0c-eIh" firstAttribute="top" secondItem="QGc-W2-JR6" secondAttribute="bottom" constant="54" id="jgE-rc-zo3"/>
+                            <constraint firstItem="QtS-SI-aqR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="khb-Td-O1U"/>
+                            <constraint firstItem="dZ8-uM-fUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="oTd-sA-3bg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="oM5-VA-1J2" secondAttribute="top" constant="44" id="vlm-07-yZr"/>
+                            <constraint firstItem="dZ8-uM-fUr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wXB-Pp-GKP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hashtagBox" destination="joq-0c-eIh" id="SzE-8x-pb3"/>
+                        <outlet property="imageView" destination="oM5-VA-1J2" id="RKF-hN-DwS"/>
+                        <outlet property="uploadBtn" destination="QGc-W2-JR6" id="uwC-5z-h9Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
