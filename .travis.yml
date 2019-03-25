@@ -1,4 +1,4 @@
-anguage: objective-c
+language: objective-c
 osx_image: xcode10
 xcode_workspace: Hashtagger/Hashtagger.xcworkspace
 xcode_scheme: Hashtagger
